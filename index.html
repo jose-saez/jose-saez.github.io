@@ -2,44 +2,11 @@
 <html lang="es">
 <head>
   <meta charset="utf-8">
-  <title>HTML</title>
+  <title>Página índice ejemplos JavaScript</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="pag1-d3.css">
-  <script src="https://d3js.org/d3.v7.min.js"></script>
 </head>
 
 <body>
-  <p>Esta página web es una página HTML válida.</p>
-  <p>Segundo párrafo</p>
-  <p>Tercer párrafo</p>
-  <p>Cuarto párrafo</p>
+	<a href="pag1-d3.htm">Ejemplo selectores D3</a>
 </body>
-  <script>
-	<!-- d3.selectAll("p").style("color", "yellow"); -->
-	<!-- d3.select("body").style("background-color", "black");	 -->
-	d3.select("body").transition()
-		.duration(2000)
-		.style("background-color", "black");
-
-	d3.select("body")
-	  .selectAll("p")
-	  .data([8, 15, 16, 23, 42])
-	  .enter().append("p")
-		.text(function(d) { return "I’m number " + d + "!"; });			
-		
-	d3.selectAll("p").style("color", function() {
-		return "hsl(" + Math.random() * 360 + ",100%,50%)";
-	});
-	
-	<!-- d3.selectAll("p").style("color", function(d, i) { -->
-		<!-- return i % 2 ? "#fff" : "#888"; -->
-	<!-- }); -->
-	
-	d3.selectAll("p")
-		.data([8, 15, 16, 23, 42])
-			.style("font-size", function(d) { return d + "px"; });	
-			
-		
-  </script>
-
 </html>
