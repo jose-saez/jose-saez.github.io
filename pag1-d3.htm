@@ -12,7 +12,6 @@
   <p>Esta página web es una página HTML válida.</p>
   <p>Segundo párrafo</p>
   <p>Tercer párrafo</p>
-  <p>Cuarto párrafo</p>
 </body>
   <script>
 	<!-- d3.selectAll("p").style("color", "yellow"); -->
@@ -23,7 +22,7 @@
 
 	d3.select("body")
 	  .selectAll("p")
-	  .data([8, 15, 16, 23, 42])
+	  .data([15, 16, 23, 42])
 	  .enter().append("p")
 		.text(function(d) { return "I’m number " + d + "!"; });			
 		
@@ -36,7 +35,7 @@
 	<!-- }); -->
 	
 	d3.selectAll("p")
-		.data([8, 15, 16, 23, 42])
+		.data([15, 16, 23, 42])
 			.style("font-size", function(d) { return d + "px"; });	
 			
 		
